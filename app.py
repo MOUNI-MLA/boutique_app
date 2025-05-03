@@ -4,7 +4,7 @@ from bson.objectid import ObjectId
 from werkzeug.security import generate_password_hash, check_password_hash
 from config import MONGO_URI, SECRET_KEY
 from utils.auth import login_required
-
+from flask import Flask
 app = Flask(__name__)
 app.secret_key = SECRET_KEY
 
